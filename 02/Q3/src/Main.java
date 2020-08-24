@@ -11,7 +11,7 @@ public class Main {
         System.out.print("Insira o ano da primeira data: ");
         int ano = sc.nextInt();
 
-        Data data = new Data(dia, mes, ano);
+        Data data1 = new Data(dia, mes, ano);
 
         System.out.print("Insira o dia da segunda data: ");
         int dia2 = sc.nextInt();
@@ -20,6 +20,8 @@ public class Main {
         System.out.print("Insira o ano da segunda data: ");
         int ano2 = sc.nextInt();
 
-        System.out.print(data.vemAntes(dia2, mes2, ano2));
+        Data data2 = new Data(dia2, mes2, ano2);
+
+        System.out.print(data1.vemAntes(data2));
     }
 }

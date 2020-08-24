@@ -7,18 +7,18 @@ public class Data {
         this.ano = ano;
     }
 
-    public boolean vemAntes(int dia2, int mes2, int ano2){
-        if(ano < ano2){
+    public boolean vemAntes(Data data2){
+        if(ano < data2.ano){
             return true;
-        }else if(ano > ano2){
+        }else if(ano > data2.ano){
             return false;
-        }else if( mes < mes2){
+        }else if(mes < data2.mes){
             return true;
-        }else if(mes > mes2){
+        }else if(mes >data2.mes){
             return false;
-        }else if(dia < dia2){
+        }else if(dia < data2.dia){
             return true;
-        }else if(dia > dia2){
+        }else if(dia > data2.dia){
             return false;
         }else{
             return false;
