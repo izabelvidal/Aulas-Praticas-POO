@@ -21,7 +21,7 @@ public class Data {
         }else if(dia > data2.dia){
             return false;
         }else{
-            return false;
+            return true;
         }
     }
 }
