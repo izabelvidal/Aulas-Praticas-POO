@@ -1,0 +1,3 @@
+As classes apresentam associação do tipo composição, a classe 
+Contador é instanciada dentro da classe Lampada tornando ela dependente.
+Ou seja, não existirá contador caso não exista lâmpada.
