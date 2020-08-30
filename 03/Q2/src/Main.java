@@ -12,7 +12,7 @@ public class Main {
 
         lamp.apaga();
         lamp.mostraEstado();
-        
+
         lamp.acende();
         lamp.mostraEstado();
         System.out.printf("A lampada foi acesa %d vezes.\n", lamp.mostraQuantasVezesFoiAcesa());
