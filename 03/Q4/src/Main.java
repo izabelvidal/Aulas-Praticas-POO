@@ -15,11 +15,7 @@ public class Main {
         System.out.print("Insira o ano da primeira data: ");
         int ano = sc.nextInt();
 
-        if( dia <= 31 | mes <= 12 | ano <= 2020){
-            data1 = new Data(dia, mes, ano);
-        }else{
-            data1 = new Data();
-        }
+        data1 = new Data(dia, mes, ano);
 
         System.out.println("A data informada é: " + data1.toString());
 
@@ -30,11 +26,7 @@ public class Main {
         System.out.print("Insira o ano da segunda data: ");
         int ano2 = sc.nextInt();
 
-        if( dia2 <= 31 | mes2 <= 12 | ano2 <= 2020){
-            data2 = new Data(dia2, mes2, ano2);
-        }else{
-            data2 = new Data();
-        }
+        data2 = new Data(dia2, mes2, ano2);
 
         System.out.println("A data informada é: " + data2.toString());
 
