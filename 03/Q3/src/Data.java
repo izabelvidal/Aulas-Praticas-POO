@@ -3,14 +3,18 @@ public class Data {
 
     public Data(int dia, int mes, int ano){
         this.dia = dia;
+        if(this.dia <= 0 || this.dia > 31){
+            this.dia = 04;
+        }
         this.mes = mes;
-        this.ano = ano;
-    }
+        if(this.mes <= 0 || this.mes > 12){
+            this.mes = 11;
+        }
 
-    public Data(){
-        this.dia = 04;
-        this.mes = 11;
-        this.ano = 1999;
+        this.ano = ano;
+        if(this.ano <= 0 ||this.ano > 2020){
+            this.ano = 1999;
+        }
     }
 
     public boolean vemAntes(Data data2){

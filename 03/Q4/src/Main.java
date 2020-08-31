@@ -30,7 +30,7 @@ public class Main {
         System.out.print("Insira o ano da segunda data: ");
         int ano2 = sc.nextInt();
 
-        if( dia <= 31 | mes <= 12 | ano <= 2020){
+        if( dia2 <= 31 | mes2 <= 12 | ano2 <= 2020){
             data2 = new Data(dia2, mes2, ano2);
         }else{
             data2 = new Data();

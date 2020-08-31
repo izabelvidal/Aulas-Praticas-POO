@@ -6,28 +6,21 @@ public class Main {
         Data data2;
 
         //data 1
-        int dia = 12;
-        int mes = 12;
-        int ano = 2012;
+        int dia = -1;
+        int mes = -2;
+        int ano = -8;
 
-        if( dia <= 31 && mes <= 12 && ano <= 2020){
-            data1 = new Data(dia, mes, ano);
-        }else{
-            data1 = new Data();
-        }
+        data1 = new Data(dia, mes, ano);
 
         System.out.println("A data informada é: " + data1.toString());
 
         //data 2
-        int dia2 = 32;
-        int mes2 = 12;
-        int ano2 = 2020;
+        int dia2 = 11;
+        int mes2 = 11;
+        int ano2 = 1962;
 
-        if( dia2 <= 31 && mes2 <= 12 && ano2 <= 2020){
-            data2 = new Data(dia2, mes2, ano2);
-        }else{
-            data2 = new Data();
-        }
+        data2 = new Data(dia2, mes2, ano2);
+
 
         System.out.println("A data informada é: " + data2.toString());
 
