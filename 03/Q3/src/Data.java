@@ -1,0 +1,38 @@
+public class Data {
+    int dia, mes, ano;
+
+    public Data(int dia, int mes, int ano){
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
+    }
+
+    public Data(){
+        this.dia = 04;
+        this.mes = 11;
+        this.ano = 1999;
+    }
+
+    public boolean vemAntes(Data data2){
+        if(ano < data2.ano){
+            return true;
+        }else if(ano > data2.ano){
+            return false;
+        }else if(mes < data2.mes){
+            return true;
+        }else if(mes >data2.mes){
+            return false;
+        }else if(dia < data2.dia){
+            return true;
+        }else if(dia > data2.dia){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    @Override
+    public String toString() {
+        return this.dia + "/" + this.mes + "/" + this.ano;
+    }
+}
