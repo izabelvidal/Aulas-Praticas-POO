@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df085637-0984-4870-aff0-23e44bea81cc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CoffeeMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CoffeeMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/Main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/allclasses-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/allclasses-noframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/constant-values.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/deprecated-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/help-doc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/index-all.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/overview-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/package-frame.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/package-summary.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/package-tree.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Q1/src/stylesheet.css" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,7 +140,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
