@@ -30,6 +30,7 @@ public class CoffeeMachine {
         int entrada = sc.nextInt();
         int i = 0;
         while(i < entrada) {
+            System.out.print("Insira uma moeda: ");
             this.moeda = sc.nextDouble();
             if (!validarMoeda()) {
                 this.valor += moeda;
@@ -37,7 +38,6 @@ public class CoffeeMachine {
                 System.out.print("Moeda Inválida!!!");
                 System.exit(0);
             }
-            System.out.print(this.valor);
             i++;
         }
         escolherBebida();
@@ -83,10 +83,10 @@ public class CoffeeMachine {
 
     public void prepararBebida(){
         if(this.valor >= this.bebida){
-            System.out.print("Valor: " + this.valor);
+            System.out.println("Valor: " + this.valor);
             System.out.println("Bebida Pronta");
-            System.out.print("Troco: ");
-            System.out.print(devolverTroco());
+            System.out.printf("Troco: %.2f", devolverTroco());
+
         }else{
             System.out.println(eSuficiente());
             introduzirMoeda();
@@ -96,6 +96,7 @@ public class CoffeeMachine {
 
     public  double devolverTroco(){
         double troco = this.valor - this.bebida;
+        this.valor = 0;
         return troco;
     }
 }
