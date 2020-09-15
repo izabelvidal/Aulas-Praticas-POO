@@ -18,11 +18,11 @@ public class CoffeeMachine {
     }
 
     public boolean validarMoeda(){
-        if(this.moeda != 0.05 | this.moeda != 0.10 | this.moeda != 0.25 |
-                this.moeda != 0.50 | this.moeda != 1){
-            return false;
+        if(this.moeda == 0.05 || this.moeda == 0.10 || this.moeda == 0.25 ||
+                this.moeda == 0.50 || this.moeda == 1){
+            return true;
         }
-        return true;
+        return false;
     }
 
     public void introduzirMoeda(){
@@ -32,7 +32,7 @@ public class CoffeeMachine {
         while(i < entrada) {
             System.out.print("Insira uma moeda: ");
             this.moeda = sc.nextDouble();
-            if (!validarMoeda()) {
+            if (validarMoeda()) {
                 this.valor += moeda;
             } else {
                 System.out.print("Moeda Inválida!!!");
@@ -84,7 +84,7 @@ public class CoffeeMachine {
     public void prepararBebida(){
         if(this.valor >= this.bebida){
             System.out.println("Valor: " + this.valor);
-            System.out.println("Bebida Pronta");
+            System.out.println("Bebida Pronta!!!");
             System.out.printf("Troco: %.2f", devolverTroco());
 
         }else{
