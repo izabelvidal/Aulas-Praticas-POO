@@ -1,57 +1,101 @@
 import java.util.Scanner;
 
 public class CoffeeMachine {
+    Scanner sc = new Scanner(System.in);
     double moeda;
+    double valor;
     double cafe;
     double chocolate;
     double capuccino;
     double bebida;
 
+
     public CoffeeMachine(){
+        this.valor = 0;
         this.cafe = 2;
         this.chocolate = 5;
         this.capuccino = 3;
     }
 
+    public boolean validarMoeda(){
+        if(this.moeda != 0.05 | this.moeda != 0.10 | this.moeda != 0.25 |
+                this.moeda != 0.50 | this.moeda != 1){
+            return false;
+        }
+        return true;
+    }
+
     public void introduzirMoeda(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Introduza uma moeda: ");
-        this.moeda = sc.nextDouble();
+        System.out.print("Quantas Moedas Deseja Inserir? ");
+        int entrada = sc.nextInt();
+        int i = 0;
+        while(i < entrada) {
+            this.moeda = sc.nextDouble();
+            if (!validarMoeda()) {
+                this.valor += moeda;
+            } else {
+                System.out.print("Moeda Inválida!!!");
+                System.exit(0);
+            }
+            System.out.print(this.valor);
+            i++;
+        }
         escolherBebida();
     }
 
+
     public void escolherBebida(){
-        System.out.print("Escolha sua bebida: ");
-        switch(int opcao){
-            case opcao == 1:
-                botaoCafe();
-            case 2:
-                botaoChocolate();;
+        System.out.println("escolhe sua bebida: ");
+        System.out.println("1 - cafe");
+        System.out.println("2 - chocolate");
+        System.out.println("3 - capuccino");
+
+        int opcao = sc.nextInt();
+        if(opcao == 1){
+            botaoCafe();
+        }else if(opcao == 2){
+            botaoChocolate();
+        }else if(opcao == 3){
+            botaoCapuccino();
+        }else{
+            System.out.println("Opção inválida.");
         }
     }
 
     public void botaoCafe(){
-        bebida = cafe;
+        this.bebida = cafe;
+        prepararBebida();
     }
 
     public void botaoChocolate(){
-        bebida = chocolate;
+        this.bebida = chocolate;
+        prepararBebida();
     }
 
     public void botaoCapuccino(){
-        bebida = capuccino;
+        this.bebida = capuccino;
+        prepararBebida();
+    }
+
+    public double eSuficiente(){
+        return this.valor - this.bebida;
     }
 
     public void prepararBebida(){
-        if(moeda >= bebida){
-            if(){}
+        if(this.valor >= this.bebida){
+            System.out.print("Valor: " + this.valor);
+            System.out.println("Bebida Pronta");
+            System.out.print("Troco: ");
+            System.out.print(devolverTroco());
         }else{
-            System.out.print("Dinheiro insuficiente!");
+            System.out.println(eSuficiente());
+            introduzirMoeda();
+
         }
     }
 
-    public void devolverTroco(){
-        double troco = this.moeda - bebida;
-        this.moeda = 0;
+    public  double devolverTroco(){
+        double troco = this.valor - this.bebida;
+        return troco;
     }
 }
