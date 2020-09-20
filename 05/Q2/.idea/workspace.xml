@@ -1,23 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df085637-0984-4870-aff0-23e44bea81cc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Q1/src/Main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/allclasses-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/allclasses-noframe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/constant-values.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/deprecated-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/help-doc.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/index-all.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/overview-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/package-frame.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/package-list" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/package-summary.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/package-tree.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Q1/src/stylesheet.css" beforeDir="false" />
-    </list>
+    <list default="true" id="df085637-0984-4870-aff0-23e44bea81cc" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,8 +24,8 @@
       <file leaf-file-name="CoffeeMachine.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+            <state relative-caret-position="881">
+              <caret line="87" column="62" lean-forward="true" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -78,8 +62,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,6 +79,8 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="RunDashboard">
@@ -150,7 +134,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3290938" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7710652" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.63593006" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -173,6 +157,20 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -210,8 +208,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CoffeeMachine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="84" column="38" lean-forward="true" selection-start-line="84" selection-start-column="38" selection-end-line="84" selection-end-column="38" />
+        <state relative-caret-position="881">
+          <caret line="87" column="62" lean-forward="true" selection-start-line="87" selection-start-column="62" selection-end-line="87" selection-end-column="62" />
         </state>
       </provider>
     </entry>
