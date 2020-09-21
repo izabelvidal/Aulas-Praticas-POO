@@ -1,14 +1,14 @@
 public class Racional {
-    private int numerador;
-    private int denominador;
+    private double numerador;
+    private double denominador;
 
-    public Racional(int numerador,int denominador){
-        int[] raci = reduzir(numerador,denominador);
+    public Racional(double numerador,double denominador){
+        double[] raci = reduzir(numerador,denominador);
         this.denominador = raci[1];
         this.numerador = raci[0];
     }
 
-    private int[] reduzir(int numerador,int denominador){
+    private double[] reduzir(double numerador,double denominador){
         double maior;
         if(numerador > denominador) {
             maior = numerador;
@@ -22,7 +22,7 @@ public class Racional {
 
             }
         }
-        int[] vetor = new int[]{numerador,denominador};
+        double[] vetor = new double[]{numerador,denominador};
         return vetor;
     }
 
@@ -39,17 +39,17 @@ public class Racional {
         return numerador;
     }
 
-    private int mmc(int num){
-        int numDenominador = denominador;
-        int maior;
-        int mmc = 1;
+    private double mmc(double num){
+        double numDenominador = denominador;
+        double maior;
+        double mmc = 1;
         if(num > numDenominador){
             maior = num;
         }else{
             maior = numDenominador;
         }
-        int[] mmcD= new int[(int)maior];
-        int[] mmcND = new int[(int)maior];
+        double[] mmcD= new double[(int)maior];
+        double[] mmcND = new double[(int)maior];
 
         //divisores de numDenominador
         for(int j = 0; j < mmcND.length;j++){
@@ -89,17 +89,17 @@ public class Racional {
     }
 
     public Racional somar(Racional num){
-        int numDenominador = num.getDenominador();
-        int numNumerador = num.getNumerador();
-        int mmc = mmc(numDenominador);
+        double numDenominador = num.getDenominador();
+        double numNumerador = num.getNumerador();
+        double mmc = mmc(numDenominador);
 
-        int novoDenominador = mmc/denominador;
+        double novoDenominador = mmc/denominador;
         numDenominador = mmc/numDenominador;
 
-        int novoNumerador = numerador * novoDenominador;
+        double novoNumerador = numerador * novoDenominador;
         numNumerador = numNumerador * numDenominador;
 
-        int somaNumerador = novoNumerador + numNumerador;
+        double somaNumerador = novoNumerador + numNumerador;
         Racional novo = new Racional(somaNumerador,mmc);
         return novo;
     }
@@ -107,11 +107,11 @@ public class Racional {
     public Racional diminuir(Racional num){
         double numDenominador = num.getDenominador();
         double numNumerador = num.getNumerador();
-        int mmc = mmc(numDenominador);
-        int novoDenominador = mmc/denominador;
+        double mmc = mmc(numDenominador);
+        double novoDenominador = mmc/denominador;
         numDenominador = mmc/numDenominador;
 
-        int novoNumerador = numerador * novoDenominador;
+        double novoNumerador = numerador * novoDenominador;
         numNumerador = numNumerador * numDenominador;
 
         double diferencaNumerador = novoNumerador - numNumerador;
@@ -120,15 +120,15 @@ public class Racional {
     }
 
     public Racional multiplicar(Racional num){
-        int multNumerador = numerador * num.getNumerador();
-        int multDenominador = denominador * num.getDenominador();
+        double multNumerador = numerador * num.getNumerador();
+        double multDenominador = denominador * num.getDenominador();
         Racional novo = new Racional(multNumerador,multDenominador);
         return novo;
     }
 
     public Racional dividir(Racional num){
-        int divNumerador = numerador * num.getDenominador();
-        int divDenominador = denominador * num.getNumerador();
+        double divNumerador = numerador * num.getDenominador();
+        double divDenominador = denominador * num.getNumerador();
         Racional novo = new Racional(divNumerador,divDenominador);
         return novo;
     }
