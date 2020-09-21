@@ -5,10 +5,10 @@ public class testeRacional {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        double numerador1 = sc.nextDouble();
-        double denominador1 = sc.nextDouble();
-        double numerador2 = sc.nextDouble();
-        double denominador2 = sc.nextDouble();
+        int numerador1 = sc.nextInt();
+        int denominador1 = sc.nextInt();
+        int numerador2 = sc.nextInt();
+        int denominador2 = sc.nextInt();
 
 
         System.out.println("num1:");
