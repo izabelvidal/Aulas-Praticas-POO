@@ -34,6 +34,10 @@ public class Racional {
         }
     }
 
+    public void imprimirFloat(){
+        System.out.printf("%.2f\n",((1.0 * this.numerador)/(1.0 * denominador)));
+    }
+
     public int getDenominador() {
         return denominador;
     }
@@ -51,8 +55,8 @@ public class Racional {
         }else{
             maior = numDenominador;
         }
-        int[] mmcD= new int[(int)maior];
-        int[] mmcND = new int[(int)maior];
+        int[] mmcD= new int[maior];
+        int[] mmcND = new int[maior];
 
         //divisores de numDenominador
         for(int j = 0; j < mmcND.length;j++){

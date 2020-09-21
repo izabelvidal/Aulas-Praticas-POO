@@ -10,24 +10,28 @@ public class testeRacional {
         int numerador2 = sc.nextInt();
         int denominador2 = sc.nextInt();
 
-
         System.out.println("num1:");
         Racional num = new Racional(numerador1, denominador1);
         num.imprimir();
         System.out.println("num2:");
         Racional num2 = new Racional(numerador2,denominador2);
         num2.imprimir();
+        num2.imprimirFloat();
         System.out.println("num1 + num2:");
         Racional num3 = num.somar(num2);
         num3.imprimir();
+        num3.imprimirFloat();
         System.out.println("num1 - num2:");
         Racional num4 = num.diminuir(num2);
         num4.imprimir();
+        num4.imprimirFloat();
         System.out.println("num1 / num2:");
         Racional num5 = num.dividir(num2);
         num5.imprimir();
+        num5.imprimirFloat();
         System.out.println("num1 * num2:");
         Racional num6 = num.multiplicar(num2);
         num6.imprimir();
+        num6.imprimirFloat();
     }
 }
