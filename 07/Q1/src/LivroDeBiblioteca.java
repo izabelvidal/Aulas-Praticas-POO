@@ -25,9 +25,9 @@ public class LivroDeBiblioteca extends Livro {
     @Override
     public String toString() {
         return "Titulo: " + this.titulo +
-                "\n Autor: " + this.autor +
-                "\n numeroPáginas: " + this.numeroPaginas +
-                "\n Edição: " + this.edicao +
-                "\n Emprestado? " + this.emprestado;
+                "\nAutor: " + this.autor +
+                "\nnumeroPáginas: " + this.numeroPaginas +
+                "\nEdição: " + this.edicao +
+                "\nEmprestado? " + this.emprestado;
     }
 }

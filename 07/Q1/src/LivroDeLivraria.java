@@ -1,11 +1,11 @@
 public class LivroDeLivraria extends Livro {
     protected double preco;
-    protected boolean estoque;
+    protected int estoque;
 
-    public LivroDeLivraria(String titulo, String autor, int numeroPaginas, int edicao, double preco){
+    public LivroDeLivraria(String titulo, String autor, int numeroPaginas, int edicao, double preco, int estoque){
         super(titulo, autor, numeroPaginas, edicao);
         this.preco = preco;
-        this.estoque = false;
+        this.estoque = estoque;
     }
 
     public double getPreco() {
@@ -16,17 +16,28 @@ public class LivroDeLivraria extends Livro {
         this.preco = preco;
     }
 
+    public int getEstoque() {
+        return estoque;
+    }
 
+    public void setEstoque(int estoque) {
+        this.estoque = estoque;
+    }
 
-
+    public boolean temEmEstoque(){
+        if(this.estoque < 0){
+            return false;
+        }
+        return true;
+    }
 
     @Override
     public String toString() {
         return "Titulo: " + this.titulo +
-                "\n Autor: " + this.autor +
-                "\n numeroPáginas: " + this.numeroPaginas +
-                "\n Edição: " + this.edicao +
-                "\n Preço " + this.preco +
-                "\n Está em estoque? " + this.estoque;
+                "\nAutor: " + this.autor +
+                "\nnumeroPáginas: " + this.numeroPaginas +
+                "\nEdição: " + this.edicao +
+                "\nPreço " + this.preco +
+                "\nQuantos em estoque? " + this.estoque;
     }
 }

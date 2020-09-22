@@ -46,8 +46,8 @@ public class Livro {
     @Override
     public String toString() {
         return "Titulo: " + this.titulo +
-                "\n Autor: " + this.autor +
-                "\n numeroPáginas: " + this.numeroPaginas +
-                "\n Edição: " + this.edicao;
+                "\nAutor: " + this.autor +
+                "\nnumeroPáginas: " + this.numeroPaginas +
+                "\nEdição: " + this.edicao;
     }
 }
