@@ -16,11 +16,11 @@ public class ObjetoGeometrico {
     }
 
     public double getLado1() {
-        return lado1;
+        return this.lado1;
     }
 
     public double getLado2() {
-        return lado2;
+        return this.lado2;
     }
 
     public double area(){

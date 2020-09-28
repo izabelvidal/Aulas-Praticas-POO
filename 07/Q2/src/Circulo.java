@@ -6,34 +6,12 @@ public class Circulo extends ObjetoGeometrico {
         this.raio = raio;
     }
 
-    //circunferencia
-    @Override
-    public void setLado1(double centro1) {
-        super.setLado1(centro1);
-    }
-
-    //raio
-    @Override
-    public void setLado2(double centro2) {
-        super.setLado2(centro2);
-    }
-
-    @Override
-    public double getLado1() {
-        return super.getLado1();
-    }
-
-    @Override
-    public double getLado2() {
-        return super.getLado2();
-    }
-
     public void setRaio(double raio) {
         this.raio = raio;
     }
 
     public double getRaio() {
-        return raio;
+        return this.raio;
     }
 
     @Override
@@ -43,6 +21,6 @@ public class Circulo extends ObjetoGeometrico {
 
     @Override
     public double perimetro() {
-        return 2*Math.PI*this.raio;
+        return 2*Math.PI*this.getRaio();
     }
 }
