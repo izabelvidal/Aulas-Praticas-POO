@@ -23,9 +23,13 @@ public class ObjetoGeometrico {
         return lado2;
     }
 
-    public void area(){}
+    public double area(){
+        return 0;
+    }
 
-    public void perimetro(){}
+    public double perimetro(){
+        return 0;
+    }
 
     public String toString(){
         return "Lado 1: " + this.lado1 +

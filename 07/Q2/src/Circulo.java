@@ -28,13 +28,21 @@ public class Circulo extends ObjetoGeometrico {
         return super.getLado2();
     }
 
-    @Override
-    public void area() {
-        double area = Math.PI * (Math.pow(this.lado2, 2));
+    public void setRaio(double raio) {
+        this.raio = raio;
+    }
+
+    public double getRaio() {
+        return raio;
     }
 
     @Override
-    public void perimetro() {
-        double perimetro =
+    public double area() {
+        return Math.PI * (Math.pow(this.lado2, 2));
+    }
+
+    @Override
+    public double perimetro() {
+        return 2*Math.PI*this.raio;
     }
 }
