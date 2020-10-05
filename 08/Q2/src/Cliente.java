@@ -29,15 +29,4 @@ public class Cliente {
     public void setEndereco(Endereco endereco){
         this.endereco = endereco;
     }
-
-    public void verificarTipo(){
-        String tipo;
-        if(this.codigo.length() == 11){
-            tipo = "fisica";
-        }else if(this.codigo.length() == 14){
-            tipo = "juridico";
-        }else{
-            System.out.println("voce e um dinissauro");
-        }
-    }
 }
