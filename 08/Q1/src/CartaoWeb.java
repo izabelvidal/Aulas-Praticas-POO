@@ -5,5 +5,13 @@ public abstract class CartaoWeb {
         this.destinatario = destinatario;
     }
 
+    public String getDestinatario() {
+        return destinatario;
+    }
+
+    public void setDestinatario(String destinatario) {
+        this.destinatario = destinatario;
+    }
+
     public abstract String exibirMensagem();
 }

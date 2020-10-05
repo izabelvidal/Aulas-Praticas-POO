@@ -5,6 +5,6 @@ public class Natal extends CartaoWeb {
 
     @Override
     public String exibirMensagem() {
-        return "Feliz Natal!!!";
+        return "Feliz Natal, " + this.getDestinatario() + "!";
     }
 }

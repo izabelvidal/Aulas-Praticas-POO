@@ -5,6 +5,6 @@ public class Aniversario extends CartaoWeb {
 
     @Override
     public String exibirMensagem() {
-        return "Feliz Aniversário!!!";
+        return "Feliz Aniversário, "  + this.getDestinatario() + "!";
     }
 }

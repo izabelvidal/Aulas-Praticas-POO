@@ -7,7 +7,7 @@ public class Quadrado extends Retangulo {
     public String toString(){
         return "Lado: " + this.dimensao1
                 + "\nAréa: " + this.area
-                + "\nPerimetro: " this.perimetro;
+                + "\nPerimetro: " + this.perimetro;
     }
 
     @Override

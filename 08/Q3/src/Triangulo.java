@@ -18,7 +18,7 @@ public class Triangulo extends ObjetoGeometrico {
         this.setArea(Math.sqrt(metPerimetro* (metPerimetro - this.dimensao1) * (metPerimetro - this.dimensao2) * (metPerimetro - this.dimensao3)));
     }
 
-    @Overrride
+    @Override
     public String toString(){
         return "Dimensão 1: " + this.dimensao1
                 + "\nDimensão 2: " + this.dimensao2
@@ -26,17 +26,4 @@ public class Triangulo extends ObjetoGeometrico {
                 + "\nAréa: " + this.area
                 + "\nPerimetro: " + this.perimetro;
     }
-
-    @Override
-    public boolean equals(Object obj){
-        if(obj != null && obj instanceof Triangulo){
-            Triangulo obj2 = (Triangulo)obj;
-            if(this.calcularArea().equals(obj2.caclcularArea() && this.calcularPerimetro().equals(obj2.caclcularPerimetro())){
-                return true;
-            }
-        }
-        return false;
-    }
-
-
 }

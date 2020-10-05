@@ -24,16 +24,4 @@ public class Circulo extends ObjetoGeometrico{
                 + "\nAréa: " + this.area
                 + "\nPerimetro: " + this.perimetro;
     }
-
-    @Override
-    public boolean equals(Object obj){
-        if(obj != null && obj instanceof Circulo){
-            Circulo obj2 = (Circulo)obj;
-            if(this.calcularArea().equals(obj2.caclcularArea() && this.calcularPerimetro().equals(obj2.caclcularPerimetro())){
-                return true;
-            }
-        }
-        return false;
-    }
-
 }

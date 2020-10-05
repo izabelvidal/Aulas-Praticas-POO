@@ -1,4 +1,4 @@
-public class ObjetoGeometrico {
+public abstract class ObjetoGeometrico {
     protected double dimensao1;
     protected double dimensao2;
     protected double dimensao3;
@@ -20,13 +20,9 @@ public class ObjetoGeometrico {
 
 
 
-    protected void calcularArea(){
-        this.setArea(0);
-    }
+    protected abstract void calcularArea();
 
-    protected void calcularPerimetro(){
-        this.setPerimetro(0);
-    }
+    protected abstract void calcularPerimetro();
 
     public double getDimensao1() {
         return dimensao1;
@@ -60,21 +56,4 @@ public class ObjetoGeometrico {
         this.perimetro = perimetro;
     }
 
-    public String toString(){
-        return "Dimensão 1: " + this.dimensao1
-                + "\nDimensão2: " + this.dimensao2
-                + "\nAréa: " + this.area
-                + "\nPerimetro: " + this.perimetro;
-    }
-
-    @Override
-    public boolean equals(Object obj){
-        if(obj != null && obj instanceof ObjetoGeometrico){
-            ObjetoGeometrico obj2 = (ObjetoGeometrico)obj;
-            if(this.calcularArea().equals(obj2.caclcularArea() && this.calcularPerimetro().equals(obj2.caclcularPerimetro())){
-                return true;
-            }
-        }
-        return false;
-    }
 }

@@ -8,7 +8,7 @@ public class TrianguloIsosceles extends Triangulo {
         return "Lado 1: " + this.dimensao1
                 + "\nLado2: " + this.dimensao2
                 + "\nAréa: " + this.area
-                + "\nPerimetro: " this.perimetro;
+                + "\nPerimetro: " + this.perimetro;
     }
 
     @Override
