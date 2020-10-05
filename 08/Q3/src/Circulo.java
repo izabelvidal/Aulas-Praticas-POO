@@ -7,16 +7,25 @@ public class Circulo extends ObjetoGeometrico{
         this.calcularPerimetro();
     }
 
-    @Override
+
     protected void calcularArea() {
         this.setArea(Math.PI * Math.pow(this.raio, 2));
     }
-
-    @Override
+    /**
+     *
+     * implementação dos metódos da classe ObjetoGeometrico
+     * removi a tag @override
+     *
+     * */
     protected void calcularPerimetro() {
         this.setPerimetro(2* Math.PI * raio);
     }
 
+    /**
+     *
+     * método sobrescrita do método toString que pertence à classe Object
+     *
+     * */
     @Override
     public String toString(){
         return "Centro: " + this.dimensao1

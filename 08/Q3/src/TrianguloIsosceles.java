@@ -3,6 +3,11 @@ public class TrianguloIsosceles extends Triangulo {
         super(lado1, lado1, lado2);
     }
 
+    /**
+     *
+     * método sobrescrita do método toString que pertence à classe Object
+     *
+     * */
     @Override
     public String toString(){
         return "Lado 1: " + this.dimensao1

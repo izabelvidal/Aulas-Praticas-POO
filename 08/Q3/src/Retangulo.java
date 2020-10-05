@@ -3,16 +3,25 @@ public class Retangulo extends ObjetoGeometrico{
         super(base, altura);
     }
 
-    @Override
     protected void calcularArea() {
         this.setArea(this.dimensao1 * this.dimensao2);
     }
-
-    @Override
+    /**
+     *
+     * implementação dos metódos da classe ObjetoGeometrico
+     * removi a tag @Override
+     *
+     * */
     protected void calcularPerimetro() {
         this.setPerimetro(2* this.dimensao1 * this.dimensao2);
     }
 
+
+    /**
+     *
+     * método sobrescrita do método toString que pertence à classe Object
+     *
+     * */
     @Override
     public String toString(){
         return "Base: " + this.dimensao1

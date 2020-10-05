@@ -19,9 +19,18 @@ public abstract class ObjetoGeometrico {
     }
 
 
-
+    /**
+     *
+     * Foi necessário adicionar o nome abstract à declaração da classe e à declaração
+     * dos métodos que serão sobrescritos
+     *
+     * */
     protected abstract void calcularArea();
-
+    /**
+     *
+     * exemplos de métodos abstratos
+     *
+     * */
     protected abstract void calcularPerimetro();
 
     public double getDimensao1() {
@@ -55,5 +64,6 @@ public abstract class ObjetoGeometrico {
     protected void setPerimetro(double perimetro) {
         this.perimetro = perimetro;
     }
+
 
 }

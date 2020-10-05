@@ -5,19 +5,26 @@ public class Triangulo extends ObjetoGeometrico {
         calcularArea();
     }
 
-    @Override
     protected void calcularPerimetro() {
         this.setPerimetro(this.dimensao1 + this.dimensao2 + this.dimensao3);
     }
-
-
-    @Override
+    /**
+     *
+     * implementação dos metódos da classe ObjetoGeometrico
+     * removi a tag @override
+     *
+     * */
     protected void calcularArea() {
         //metade do perimetro
         double metPerimetro = this.getPerimetro()/2;
         this.setArea(Math.sqrt(metPerimetro* (metPerimetro - this.dimensao1) * (metPerimetro - this.dimensao2) * (metPerimetro - this.dimensao3)));
     }
 
+    /**
+     *
+     * método sobrescrita do método toString que pertence à classe Object
+     *
+     * */
     @Override
     public String toString(){
         return "Dimensão 1: " + this.dimensao1
