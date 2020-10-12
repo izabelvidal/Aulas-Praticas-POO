@@ -24,6 +24,10 @@ public class RepositorioPessoaFisica extends RepositorioCliente {
         return retorno;
     }
 
+    public ArrayList<Cliente> getClientes(){
+        return this.arrayPessoaFisica;
+    }
+
     public void removerCliente(Cliente cliente){
         for(int i = 0; i < arrayPessoaFisica.size(); i++){
             if(arrayPessoaFisica.get(i).equals(cliente)){

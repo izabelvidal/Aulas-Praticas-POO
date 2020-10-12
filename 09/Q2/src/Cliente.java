@@ -27,7 +27,9 @@ public class Cliente implements Comparable{
         this.codigo = codigo;
     }
 
-    public int getIdade() { return idade; }
+    public int getIdade() {
+        return idade;
+    }
     public void setIdade(int idade) { this.idade = idade; }
 
     public Endereco getEndereco(){ return this.endereco; }
