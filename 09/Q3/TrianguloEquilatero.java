@@ -3,11 +3,6 @@ public class TrianguloEquilatero extends Triangulo {
         super(lado, lado, lado);
     }
 
-    /**
-     *
-     * método sobrescrita do método toString que pertence à classe Object
-     *
-     * */
     @Override
     public String toString() {
         return "Lados: " + this.getLado1()

@@ -3,11 +3,6 @@ public class Quadrado extends Retangulo {
         super(lado, lado);
     }
 
-    /**
-     *
-     * método sobrescrita do método toString que pertence à classe Object
-     *
-     * */
     @Override
     public String toString(){
         return "Lado: " + this.getBase()

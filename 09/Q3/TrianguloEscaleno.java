@@ -3,11 +3,6 @@ public class TrianguloEscaleno extends Triangulo {
         super(dimensao1, dimensao2, dimensao3);
     }
 
-    /**
-     *
-     * método sobrescrita do método toString que pertence à classe Object
-     *
-     * */
     @Override
     public String toString(){
         return "Lado 1: " + this.getLado1()

@@ -48,6 +48,9 @@ public class Retangulo implements ObjetoGeometrico{
         ObjetoGeometrico novo = new Retangulo(this.base, this.altura);
         ((Retangulo) novo).setBase(getBase());
         ((Retangulo) novo).setAltura(getAltura());
+        novo.calcularPerimetro();
+        novo.calcularArea();
+        novo.getArea();
         return novo;
     }
 

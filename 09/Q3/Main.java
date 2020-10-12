@@ -6,7 +6,7 @@ public class Main {
         ObjetoGeometrico triangulo = new Triangulo(6,6,6);
         ObjetoGeometrico quadrado = new Quadrado(8);
         ObjetoGeometrico trianguloEquilatero = new TrianguloEquilatero(95);
-        ObjetoGeometrico trianguloEscaleno = new TrianguloEscaleno(17, 44, 93);
+        ObjetoGeometrico trianguloEscaleno = new TrianguloEscaleno(17, 15, 93);
         ObjetoGeometrico trianguloIsosceles = new TrianguloIsosceles(26, 11);
 
         circulo.calcularArea();

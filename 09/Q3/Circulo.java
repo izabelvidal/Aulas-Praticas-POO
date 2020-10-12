@@ -47,6 +47,9 @@ public class Circulo implements ObjetoGeometrico{
         ObjetoGeometrico novo = new Circulo(this.centro, this.raio);
         ((Circulo) novo).setCentro(getCentro());
         ((Circulo) novo).setRaio(getRaio());
+        novo.calcularArea();
+        novo.calcularPerimetro();
+        novo.getArea();
         return novo;
     }
 

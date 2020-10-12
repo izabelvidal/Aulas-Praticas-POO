@@ -61,6 +61,9 @@ public class Triangulo implements ObjetoGeometrico, Cloneable {
         ((Triangulo) novo).setLado1(getLado1());
         ((Triangulo) novo).setLado2(getLado2());
         ((Triangulo) novo).setLado3(getLado3());
+        novo.calcularPerimetro();
+        novo.calcularArea();
+        novo.getArea();
         return novo;
     }
 
