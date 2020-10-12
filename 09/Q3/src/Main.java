@@ -5,9 +5,9 @@ public class Main {
         ObjetoGeometrico retangulo = new Retangulo(4, 16);
         ObjetoGeometrico triangulo = new Triangulo(6,6,6);
         ObjetoGeometrico quadrado = new Quadrado(8);
-        ObjetoGeometrico trianguloEquilatero = new TrianguloEquilatero(10);
-        ObjetoGeometrico trianguloEscaleno = new TrianguloEscaleno(12, 14, 16);
-        ObjetoGeometrico trianguloIsosceles = new TrianguloIsosceles(12, 14);
+        ObjetoGeometrico trianguloEquilatero = new TrianguloEquilatero(95);
+        ObjetoGeometrico trianguloEscaleno = new TrianguloEscaleno(17, 44, 93);
+        ObjetoGeometrico trianguloIsosceles = new TrianguloIsosceles(26, 11);
 
         circulo.calcularArea();
         circulo.getPerimetro();
@@ -45,6 +45,18 @@ public class Main {
         System.out.println(trianguloIsosceles.getPerimetro());
 
         //CLONAR
-
+        System.out.println(circulo.clone(circulo));
+        System.out.println();
+        System.out.println(retangulo.clone(retangulo));
+        System.out.println();
+        System.out.println(triangulo.clone(triangulo));
+        System.out.println();
+        System.out.println(quadrado.clone(quadrado));
+        System.out.println();
+        System.out.println(trianguloEquilatero.clone(trianguloEquilatero));
+        System.out.println();
+        System.out.println(trianguloEscaleno.clone(trianguloEscaleno));
+        System.out.println();
+        System.out.println(trianguloIsosceles.clone(trianguloIsosceles));
     }
 }

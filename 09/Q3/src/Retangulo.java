@@ -17,6 +17,14 @@ public class Retangulo implements ObjetoGeometrico{
         return altura;
     }
 
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
     @Override
     public double getArea() {
         return area;
@@ -33,6 +41,14 @@ public class Retangulo implements ObjetoGeometrico{
 
     public void calcularPerimetro() {
         this.perimetro = (2* (this.base * this.altura));
+    }
+
+    @Override
+    public ObjetoGeometrico clone(ObjetoGeometrico o) {
+        ObjetoGeometrico novo = new Retangulo(this.base, this.altura);
+        ((Retangulo) novo).setBase(getBase());
+        ((Retangulo) novo).setAltura(getAltura());
+        return novo;
     }
 
     @Override

@@ -11,10 +11,16 @@ public class Triangulo implements ObjetoGeometrico, Cloneable {
         this.lado3 = lado3;
     }
 
-    public Triangulo(Triangulo clone, double lado1Clone, double lado2Clone, double lado3Clone){
-        this.lado1 = lado1Clone;
-        this.lado2 = lado2Clone;
-        this.lado3 = lado3Clone;
+    public void setLado1(double lado1) {
+        this.lado1 = lado1;
+    }
+
+    public void setLado2(double lado2) {
+        this.lado2 = lado2;
+    }
+
+    public void setLado3(double lado3) {
+        this.lado3 = lado3;
     }
 
     public double getLado1() {
@@ -50,8 +56,12 @@ public class Triangulo implements ObjetoGeometrico, Cloneable {
     }
 
     @Override
-    public ObjetoGeometrico clone() {
-        return (Triangulo) super.clone();
+    public ObjetoGeometrico clone(ObjetoGeometrico o){
+        ObjetoGeometrico novo = new Triangulo(this.lado1, this.lado2, this.lado3);
+        ((Triangulo) novo).setLado1(getLado1());
+        ((Triangulo) novo).setLado2(getLado2());
+        ((Triangulo) novo).setLado3(getLado3());
+        return novo;
     }
 
     @Override

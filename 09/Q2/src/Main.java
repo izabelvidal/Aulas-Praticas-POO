@@ -10,7 +10,7 @@ public class Main {
 	    Cliente cliente = new Cliente("izabel", "0411", 20, endereco);
 	    rep.adicionarCliente(cliente);
 
-        Cliente cliente3 = new Cliente("izabel", "0411", 15, endereco);
+        Cliente cliente3 = new Cliente("regina", "0411", 15, endereco);
         rep.adicionarCliente(cliente3);
 
         Cliente cliente2 = new Cliente("Charlie", "2105", 2, endereco);

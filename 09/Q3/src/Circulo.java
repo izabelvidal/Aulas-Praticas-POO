@@ -11,6 +11,22 @@ public class Circulo implements ObjetoGeometrico{
         this.calcularPerimetro();
     }
 
+    public double getCentro() {
+        return centro;
+    }
+
+    public double getRaio() {
+        return raio;
+    }
+
+    public void setCentro(double centro) {
+        this.centro = centro;
+    }
+
+    public void setRaio(double raio) {
+        this.raio = raio;
+    }
+
     public double getArea(){
         return this.area;
     }
@@ -24,6 +40,14 @@ public class Circulo implements ObjetoGeometrico{
     }
     public void calcularPerimetro() {
         this.perimetro = (2* Math.PI * raio);
+    }
+
+    @Override
+    public ObjetoGeometrico clone(ObjetoGeometrico o) {
+        ObjetoGeometrico novo = new Circulo(this.centro, this.raio);
+        ((Circulo) novo).setCentro(getCentro());
+        ((Circulo) novo).setRaio(getRaio());
+        return novo;
     }
 
     @Override

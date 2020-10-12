@@ -5,6 +5,6 @@ public interface ObjetoGeometrico{
     void calcularArea();
     void calcularPerimetro();
 
-    ObjetoGeometrico clone();
+    ObjetoGeometrico clone(ObjetoGeometrico o);
 
 }
