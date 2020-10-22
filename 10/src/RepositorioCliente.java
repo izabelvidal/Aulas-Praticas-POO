@@ -54,7 +54,7 @@ public class RepositorioCliente{
 
             int data = inputStream.read();
             while (data != -1){
-                System.out.println((char) data);
+                System.out.print((char) data);
                 data = inputStream.read();
             }
         }catch (FileNotFoundException ex){
