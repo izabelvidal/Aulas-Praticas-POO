@@ -1,61 +1,71 @@
+import java.io.*;
 import java.util.ArrayList;
-import java.io.FileInputStream;
-import java.io.File;
-import java.io.ObjectOutputStream;
-import java.io.FileOutputStream;
-import java.io.ObjectInputStream;
 
-public class RepositorioCliente {
+public class RepositorioCliente{
+
     private ArrayList<Cliente> arrayClientes;
 
-    public RepositorioCliente() {
+    public RepositorioCliente(){
         this.arrayClientes = new ArrayList<>();
     }
 
-    public Cliente buscar(String procuraCodigo){
-        Cliente retorno = null;
-
-        int tamanho = this.arrayClientes.size();
-        for(int i=0; i<tamanho; i++){
-            if(this.arrayClientes.get(i).getCodigo().equals(procuraCodigo)){
-                retorno = this.arrayClientes.get(i);
-                break;
-            }
-        }
-        return retorno;
+    public void adicionarCliente(Cliente cliente) {
+        this.arrayClientes.add(cliente);
     }
 
-    public void removerCliente(Cliente cliente){
-        for(int i = 0; i < arrayClientes.size(); i++){
-            if(arrayClientes.get(i).equals(cliente)){
+    public void removerCliente(Cliente cliente) {
+        for (int i = 0; i < arrayClientes.size(); i++) {
+            if (arrayClientes.get(i).equals(cliente)) {
                 arrayClientes.remove(arrayClientes.get(i));
             }
         }
     }
 
+    public void buscarCliente(String codigo) {
+        for (int i = 0; i < arrayClientes.size(); i++) {
+            if (arrayClientes.get(i).equals(codigo)) {
+                System.out.print(arrayClientes);
+            } else{
+                System.out.print("Cliente não existe");
+            }
+        }
+    }
+
+    public ArrayList<Cliente> getCliente(){
+        return this.arrayClientes;
+    }
+
     public void gravarObj(Object obj){
         try{
-            FileOutputStream fileOut = new FileOutputStream("clientes.dat");
-            ObjectOutputStream objectOut = new ObjectOutputStream(fileOut);
-            objectOut.writeObject(obj);
-            objectOut.close();
-        }catch(Exception ex){
+            FileOutputStream file = new FileOutputStream("clientes.dat");
+            ObjectOutputStream os = new ObjectOutputStream(file);
+            os.writeObject(obj);
+            os.close();
+        }catch (Exception ex){
             ex.printStackTrace();
         }
     }
 
-    public Object leObj(){
+    public void leObj(){
+        InputStream inputStream;
         try{
-            FileInputStream fileIn = new FileInputStream("clients.dat");
-            ObjectInputStream objectIn = new ObjectInputStream(fileIn);
+            inputStream = new BufferedInputStream(new FileInputStream("clientes.dat"));
 
-            Object obj = objectIn.readObject();
+            int data = inputStream.read();
+            while (data != -1){
+                System.out.println((char) data);
+                data = inputStream.read();
+            }
+            /*FileInputStream file = new FileInputStream("clientes.dat");
+            ObjectInputStream is = new ObjectInputStream(file);
 
-            objectIn.close();
-            return obj;
-        }catch(Exception ex){
+            Object obj = is.readObject();
+            is.close();
+            return obj;*/
+        }catch (FileNotFoundException ex){
             ex.printStackTrace();
-            return null;
+        }catch(IOException ex2){
+            ex2.printStackTrace();
         }
     }
 }
