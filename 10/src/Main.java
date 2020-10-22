@@ -6,7 +6,12 @@ public class Main {
         Endereco endereco = new Endereco("Boa Vista", "Aurora", 30);
 
         Cliente cliente = new Cliente("izabel", "0411", 20, endereco);
-        rep.gravarObj(cliente);
+        rep.adicionarCliente(cliente);
+        Cliente cliente2 = new Cliente("charlie", "0411", 20, endereco);
+        rep.adicionarCliente(cliente2);
+        Cliente cliente3 = new Cliente("regina", "0411", 20, endereco);
+        rep.adicionarCliente(cliente3);
+
 
         rep.leObj();
 

@@ -11,6 +11,7 @@ public class RepositorioCliente{
 
     public void adicionarCliente(Cliente cliente) {
         this.arrayClientes.add(cliente);
+        this.gravarObj(arrayClientes);
     }
 
     public void removerCliente(Cliente cliente) {
@@ -56,12 +57,6 @@ public class RepositorioCliente{
                 System.out.println((char) data);
                 data = inputStream.read();
             }
-            /*FileInputStream file = new FileInputStream("clientes.dat");
-            ObjectInputStream is = new ObjectInputStream(file);
-
-            Object obj = is.readObject();
-            is.close();
-            return obj;*/
         }catch (FileNotFoundException ex){
             ex.printStackTrace();
         }catch(IOException ex2){
